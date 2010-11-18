@@ -1,0 +1,14 @@
+USE_OCAMLFIND = true
+OCAMLPACKS = biniou yojson unix
+OCAMLFLAGS += -g
+PROGRAMS[] =
+  jsondiff
+
+OCamlProgram(jsondiff, jsondiff)
+
+.DEFAULT: jsondiff
+
+.PHONY: clean
+clean:
+  rm -f \
+     $(filter-proper-targets $(glob $(addsuffix .*, $(PROGRAMS)))) $(PROGRAMS) \
