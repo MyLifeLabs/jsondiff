@@ -1,0 +1,4 @@
+name = "jsondiff"
+version = "@@VERSION@@"
+description = "JSON sensitive diffing"
+requires = "biniou,yojson,unix"
