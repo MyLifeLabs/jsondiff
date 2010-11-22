@@ -1,0 +1,12 @@
+Package: apps-jsondiff
+Version: 0.0.1
+Revision: 1
+Depends: godi-ocaml (>= 3.11.2)
+Build-Depends: godi-findlib (>= 0.8.1), godi-biniou (>= 0.9.1), godi-yojson (>= 0.8.1)
+Sources: http://oss.wink.com/jsondiff/jsondiff-0.0.1.tar.gz
+Homepage: http://oss.wink.com/jsondiff/
+Maintainer: John Chee <johnchee@mylife.com>
+Options: opt
+Docfiles: README, LICENSE
+Description: JSON sensitive diff.
+.
