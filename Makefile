@@ -24,8 +24,8 @@ META: META.in Makefile
 	sed -e 's:@@VERSION@@:$(VERSION):' META.in > META
 
 install: META
-	test ! -f jsondiff || cp ydump $(BINDIR)/
-	test ! -f jsondiff.exe || cp ydump.exe $(BINDIR)/
+	test ! -f jsondiff || cp jsondiff $(BINDIR)/
+	test ! -f jsondiff.exe || cp jsondiff.exe $(BINDIR)/
 	ocamlfind install jsondiff META \
           $$(ls jsondiff.mli jsondiff.cmi jsondiff.cmo jsondiff.cmx jsondiff.o)
 
