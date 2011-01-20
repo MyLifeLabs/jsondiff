@@ -27,7 +27,7 @@ install: META
 	test ! -f jsondiff || cp jsondiff $(BINDIR)/
 	test ! -f jsondiff.exe || cp jsondiff.exe $(BINDIR)/
 	ocamlfind install jsondiff META \
-          $$(ls jsondiff.mli jsondiff.cmi jsondiff.cmo jsondiff.cmx jsondiff.o)
+          $$(ls jsondiff.cmi jsondiff.cmo jsondiff.cmx jsondiff.o)
 
 uninstall:
 	test ! -f $(BINDIR)/jsondiff || rm $(BINDIR)/jsondiff
